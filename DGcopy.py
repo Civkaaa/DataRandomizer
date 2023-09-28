@@ -7,16 +7,9 @@ from os import getcwd
 from time import time
 # colors and fonts 
 
-roboto6 = ('roboto', '6')
-roboto7 = ('roboto', '7')
-roboto8 = ('roboto', '8')
-roboto10 = ('roboto', '10')
-roboto12 = ('roboto', '12')
-roboto16 = ('roboto', '16')
-roboto18 = ('roboto', '18')
 
-colorsdict = {'gray' : '#e7edf9', 'green' : '#00c3a3', 'darkgreen' : '#004a46', 'lightgray' : '#8f8f9d', 'darkblue' : '#1e325a', 
-              'lightblue' : '#63a8e4'}
+
+
 
 d = getcwd() # current directory
 
@@ -233,11 +226,7 @@ def Datatype1():
     
     tk.Label(mainpanel, text='(не более 3)', font=roboto8, background='white').place(x=400, y=8)
     tk.Label(mainpanel, text='Количество уникальных строк', font=roboto12, background='white').place(x=15, y=5)
-    applybtn.place(x=500, y=30)
-    uniquelines.place(x=300, y=8)
-    one.place(x=10, y=30)
-    two.place(x=10, y=55)
-    three.place(x=10, y=80)
+    
     
     
 def Datatype2():
@@ -399,9 +388,8 @@ datatype.place(x=175, y=30)
 startlabel.place(x=200, y=230)
 
 
-main.title('EGE Data Generator')
-main.geometry('850x550+300+200')
-main.configure(background=colorsdict['gray'])
+
+
 main.resizable(False, False)
 main.config()
 
